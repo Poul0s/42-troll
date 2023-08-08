@@ -1,0 +1,20 @@
+// scripts todolist
+
+- reverse all .h files
+	-> script that reverse the content of all headers files
+
+- full disk
+	-> script that add random files everywhere in the home folders
+
+- emoji font
+	-> set emoji font
+
+- where are commands
+	-> remove PATH variable 
+	-> kill active terminals
+
+- communism mode
+	-> set language as russian
+	-> set keyboard layout in russian
+	-> set communism wallpaper
+	-> change color theme in red
