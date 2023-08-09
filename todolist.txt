@@ -11,10 +11,6 @@
 - emoji font
 	-> set emoji font
 
-- where are commands
-	-> remove PATH variable 
-	-> kill active terminals
-
 - communism mode
 	-> set language as russian
 	-> set keyboard layout in russian
