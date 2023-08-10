@@ -5,7 +5,6 @@
 
 - full disk
 	-> script that add random files everywhere in the home folders
-		-> todo optimise (like add necessary files in one time)
 		-> pick name of another real file (but dont remplace it)
 
 - communism mode
