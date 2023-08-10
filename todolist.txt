@@ -8,14 +8,8 @@
 		-> todo optimise (like add necessary files in one time)
 		-> pick name of another real file (but dont remplace it)
 
-- emoji font
-	-> set emoji font
-
 - communism mode
 	-> set language as russian
 	-> set keyboard layout in russian
 	-> set communism wallpaper
 	-> change color theme in red
-
-- fake-semicolon
-	-> replace all semicolon is C scripts by greek question mark
