@@ -12,3 +12,10 @@
 	-> set keyboard layout in russian
 	-> set communism wallpaper
 	-> change color theme in red
+
+
+
+## ideas
+
+gsettings check org.gnome.desktop.peripherals.*
+	-> gsettings set org.gnome.desktop.peripherals.keyboard delay "uint32 1" : very evil
