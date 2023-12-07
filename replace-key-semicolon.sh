@@ -1,1 +1,1 @@
-echo "include \"%L\"\n<semicolon>     : \";\""
+echo "include \"%L\"\n<semicolon>     : \";\"" >> ~/.XCompose
