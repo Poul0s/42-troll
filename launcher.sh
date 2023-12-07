@@ -19,6 +19,9 @@ case "$1" in
 		scriptlocation="$githubloc/fake-semicolon.sh"
 		argument=$2
 	;;
+	--replace-key-semicolon|-SK)
+		scriptlocation="$githubloc/replace-key-semicolon.sh"
+	;;
 	--emoji-font|-E)
 		scriptlocation="$githubloc/emoji_font.sh"
 	;;
