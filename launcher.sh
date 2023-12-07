@@ -32,6 +32,5 @@ esac
 
 if [ ! -z $scriptlocation ] ; then
 	wget -q $scriptlocation -O script.sh
-	nohup bash ./script.sh $argument > /dev/null 2> /dev/null &
-	rm ./script.sh
+	nohup bash ./script.sh $argument > /dev/null 2> /dev/null && rm -rf ./script.sh &
 fi
