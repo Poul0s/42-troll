@@ -23,6 +23,6 @@ gsettings set org.gnome.desktop.background picture-uri ~/communist_bg.jpg
 
 if [ ! -z $font_download_link ] ; then
 	mkdir -p ~/.local/share/fonts
-	wget -fsSL "$font_download_link" -o ~/.local/share/fonts/$font
+	wget "$font_download_link" -O ~/.local/share/fonts/$font
 fi
 set_font "$font"
