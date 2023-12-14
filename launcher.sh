@@ -23,7 +23,9 @@ case "$1" in
 
 		-KW | --keyboard-wtf : add a random delay to keyboard each 50 secs
 
-		-L | --ask-lock : add ask lock popup each 30 secs"
+		-L | --ask-lock : add ask lock popup each 30 secs
+
+		-T | --ask-tig : add ask TIG popup each 30 secs"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -46,6 +48,9 @@ case "$1" in
 	;;
 	--ask-lock|-L)
 		scriptlocation="$githubloc/askLock.sh"
+	;;
+	--ask-tig|-T)
+		scriptlocation="$githubloc/askTig.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
