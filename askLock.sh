@@ -2,7 +2,7 @@ echo '#!/bin/bash
 
 function askLock()
 {
-	res=$(zenity --info --text="Do you want to lock" --timeout 3 --extra-button NO --ok-label YES)
+	res=$(zenity --info --text="Do you want to lock" --timeout 7 --extra-button NO --ok-label YES)
 	if [ "$res" = "" ]; then
 		ft_lock
 	fi
