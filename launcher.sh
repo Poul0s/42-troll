@@ -45,7 +45,7 @@ case "$1" in
 		scriptlocation="$githubloc/keyboard-wtf.sh"
 	;;
 	--ask-lock|-L)
-		scriptlocation="$githubloc/asklock.sh"
+		scriptlocation="$githubloc/askLock.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"

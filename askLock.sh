@@ -8,7 +8,7 @@ function askLock()
 	fi
 }
 
-sleep 5
+sleep 30
 askLock
 bash $0' > ~/.local/bin/askLock.sh
 
