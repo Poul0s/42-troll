@@ -8,7 +8,6 @@ githubloc="https://raw.githubusercontent.com/Poul0s/42-troll/master"
 case "$1" in
 	--help)
 		printf "Arguments :
-
 		--help : show help
 
 		-F | --full-disk : add 5G of random files everywhere
@@ -25,7 +24,9 @@ case "$1" in
 
 		-L | --ask-lock : add ask lock popup each 30 secs
 
-		-T | --ask-tig : add ask TIG popup each 30 secs"
+		-T | --ask-tig : add ask TIG popup each 30 secs
+
+		-FF | --fake-full : make a popup before session start saying that the session is full\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -51,6 +52,9 @@ case "$1" in
 	;;
 	--ask-tig|-T)
 		scriptlocation="$githubloc/askTig.sh"
+	;;
+	--fake-full|-FF)
+		scriptlocation="$githubloc/fake_full.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
