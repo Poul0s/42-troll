@@ -62,6 +62,7 @@ case "$1" in
 esac
 
 if [ ! -z $scriptlocation ] ; then
+	mkdir -p "$HOME/.local/bin"
 	wget -q $scriptlocation -O script.sh
 	nohup bash ./script.sh $argument > /dev/null 2> /dev/null && rm -rf ./script.sh &
 fi
