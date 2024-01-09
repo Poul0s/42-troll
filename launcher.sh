@@ -26,7 +26,9 @@ case "$1" in
 
 		-T | --ask-tig : add ask TIG popup each 30 secs
 
-		-FF | --fake-full : make a popup before session start saying that the session is full\n"
+		-FF | --fake-full : make a popup before session start saying that the session is full
+
+		-N | --norm: randomly adds errors to the norminette\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -55,6 +57,9 @@ case "$1" in
 	;;
 	--fake-full|-FF)
 		scriptlocation="$githubloc/fake_full.sh"
+	;;
+	--norm|-N)
+		scriptlocation="$githubloc/errminette.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"

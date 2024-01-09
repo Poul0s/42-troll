@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+import os
+import sys
+from random import randint
+if(len(sys.argv) == 1):
+	files = os.listdir();
+else:
+	files = sys.argv[1:]
+a = 1;
+while(a):
+	a = 0
+	for file in files:
+		if(os.path.isdir(file)):
+			files.remove(file)
+			files = files + [file + "/" + elem for elem in os.listdir(file)]
+			a = 1
+final_list = []
+for file in files:
+	a = file[-2:]
+	if(a == '.c' or a == '.h'):
+		final_list.append(file)
+for file in final_list:
+	if (file == '-v' or file == '--version'):
+		print("errminette 3.3.54");
+		exit()
+for file in final_list:
+	if(randint(1,10) == 1):
+		if(os.path.isfile(file)):
+			print(file +": Error!\nError: INVALID_HEADER       (line:   1, col:   1):	Missing or invalid 42 header")
+		else:
+			print("'"+file+"' no such file or directory")
+	else:
+		os.system("norminette " + file)
