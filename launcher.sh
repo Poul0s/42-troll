@@ -28,6 +28,8 @@ case "$1" in
 
 		-FF | --fake-full : make a popup before session start saying that the session is full
 
+		-Y | your zsh seems pretty strong, let me destroy it
+
 		-N | --norm: randomly adds errors to the norminette\n"
 	;;
 	--full-disk|-F)
@@ -60,6 +62,9 @@ case "$1" in
 	;;
 	--norm|-N)
 		scriptlocation="$githubloc/errminette.sh"
+	;;
+	-Y)
+		scriptlocation="$githubloc/uwu.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
