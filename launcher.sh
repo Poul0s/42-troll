@@ -30,7 +30,9 @@ case "$1" in
 
 		-Y | your zsh seems pretty strong, let me destroy it
 
-		-N | --norm: randomly adds errors to the norminette\n"
+		-N | --norm: randomly adds errors to the norminette
+
+		-V | --invim: put vim in arabic mode\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -65,6 +67,9 @@ case "$1" in
 	;;
 	-Y)
 		scriptlocation="$githubloc/uwu.sh"
+	;;
+	--invim|-V)
+		scriptlocation="$githubloc/invim.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
