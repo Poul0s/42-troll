@@ -32,7 +32,9 @@ case "$1" in
 
 		-N | --norm: randomly adds errors to the norminette
 
-		-V | --invim: put vim in arabic mode\n"
+		-V | --invim: put vim in arabic mode
+
+		-FL | --fake-lock: replace the lock button with a button that lock, wait 10 seconds then delog\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -70,6 +72,9 @@ case "$1" in
 	;;
 	--invim|-V)
 		scriptlocation="$githubloc/invim.sh"
+	;;
+	--fake-lock|-FL)
+		scriptlocation="$githubloc/fake_lock.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
