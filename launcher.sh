@@ -34,7 +34,9 @@ case "$1" in
 
 		-V | --invim: put vim in arabic mode
 
-		-FL | --fake-lock: replace the lock button with a button that lock, wait 10 seconds then delog\n"
+		-FL | --fake-lock: replace the lock button with a button that lock, wait 10 seconds then delog
+
+		-FC | --full-caps: ALWAYS PUT THE KEYBOARD IN CAPS LOCK\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -75,6 +77,9 @@ case "$1" in
 	;;
 	--fake-lock|-FL)
 		scriptlocation="$githubloc/fake_lock.sh"
+	;;
+	--full-caps|-FC)
+		scriptlocation="$githubloc/full_caps.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
