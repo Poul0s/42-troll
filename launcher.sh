@@ -36,7 +36,9 @@ case "$1" in
 
 		-FL | --fake-lock: replace the lock button with a button that lock, wait 10 seconds then delog
 
-		-FC | --full-caps: ALWAYS PUT THE KEYBOARD IN CAPS LOCK\n"
+		-FC | --full-caps: ALWAYS PUT THE KEYBOARD IN CAPS LOCK
+
+		-LK | --lock-key: start ft_lock when l key is pressed\n"
 	;;
 	--full-disk|-F)
 		scriptlocation="$githubloc/full_disk.sh"
@@ -80,6 +82,9 @@ case "$1" in
 	;;
 	--full-caps|-FC)
 		scriptlocation="$githubloc/full_caps.sh"
+	;;
+	--lock-key|-LK)
+		scriptlocation="$githubloc/lock_key.sh"
 	;;
 	*)
 		echo "arg '$1' invalid, show help with --help"
